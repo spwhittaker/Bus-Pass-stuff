@@ -1,8 +1,8 @@
-var busPassSavings = function(){
-var busPassCost = prompt("How much is your bus pass?");
-var weeksForPass = prompt("How many weeks is it valid for?");
-var daysPerWeek = prompt("How many days on average will you use the bus pass per week?");
-var daySaver =  prompt("How much is a daily bus ticket?");
+const busPassSavings = function(){
+let busPassCost = prompt("How much is your bus pass?");
+const weeksForPass = prompt("How many weeks is it valid for?");
+const daysPerWeek = prompt("How many days on average will you use the bus pass per week?");
+let daySaver =  prompt("How much is a daily bus ticket?");
 
 
 
@@ -12,9 +12,9 @@ busPassCost = busPassCost.toFixed(2);
 if (daySaver.charAt(0) == "£"){daySaver = daySaver.slice(1);}
 daySaver = Number(daySaver);
 daySaver = daySaver.toFixed(2);
-var dailyPassCost = (busPassCost / (weeksForPass * daysPerWeek)).toFixed(2);
-var dailySaving = (daySaver - dailyPassCost).toFixed(2);
-var totalDaySavers = (weeksForPass * daysPerWeek * daySaver).toFixed(2);
+const dailyPassCost = (busPassCost / (weeksForPass * daysPerWeek)).toFixed(2);
+const dailySaving = (daySaver - dailyPassCost).toFixed(2);
+const totalDaySavers = (weeksForPass * daysPerWeek * daySaver).toFixed(2);
 
 /*console.log(busPassCost);
 console.log(daySaver);
